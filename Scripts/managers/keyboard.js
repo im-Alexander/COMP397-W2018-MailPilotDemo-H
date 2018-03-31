@@ -28,7 +28,7 @@ var managers;
                     this.moveRight = true;
                     break;
                 case config.Keys.SPACE:
-                    this.jump = true;
+                    this.fire = true;
                     break;
             }
         };
@@ -51,7 +51,7 @@ var managers;
                     this.moveRight = false;
                     break;
                 case config.Keys.SPACE:
-                    this.jump = false;
+                    this.fire = false;
                     break;
             }
         };
