@@ -4,9 +4,9 @@
         <key>fileFormatVersion</key>
         <int>4</int>
         <key>texturePackerVersion</key>
-        <string>4.6.2</string>
+        <string>4.6.3</string>
         <key>fileName</key>
-        <string>E:/Zer0_Storage/Alex Homework/_Winter 2018/COMP 397/Classwork/lesson 8/COMP397-W2018-MailPilotDemo-H/Assets/sprites/MailPilotDemoProject.tps</string>
+        <string>/Users/thomas/Desktop/COMP397/COMP397-W2018-MailPilotDemo-H/Assets/sprites/MailPilotDemoProject.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -129,22 +129,6 @@
                 <uint>1</uint>
             </struct>
         </struct>
-        <key>andEngine</key>
-        <struct type="AndEngine">
-            <key>minFilter</key>
-            <enum type="AndEngine::MinFilter">Linear</enum>
-            <key>packageName</key>
-            <string>Texture</string>
-            <key>wrap</key>
-            <struct type="AndEngineWrap">
-                <key>s</key>
-                <enum type="AndEngineWrap::Wrap">Clamp</enum>
-                <key>t</key>
-                <enum type="AndEngineWrap::Wrap">Clamp</enum>
-            </struct>
-            <key>magFilter</key>
-            <enum type="AndEngine::MagFilter">MagLinear</enum>
-        </struct>
         <key>dataFileNames</key>
         <map type="GFileNameMap">
             <key>json</key>
@@ -199,6 +183,19 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
+            <key type="filename">../images/bullet.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>4,4,8,8</rect>
+                <key>scale9Paddings</key>
+                <rect>4,4,8,8</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">../images/cloud.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -259,6 +256,8 @@
             <key type="filename">../images/plane1.png</key>
             <key type="filename">../images/plane2.png</key>
             <key type="filename">../images/plane3.png</key>
+            <key type="filename">../images/planeflash1.png</key>
+            <key type="filename">../images/planeflash2.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -298,16 +297,12 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../images/smallbullet.png</key>
-            <key type="filename">../../../../../New Assets/New Assets/blueenemy1.png</key>
-            <key type="filename">../../../../../New Assets/New Assets/blueenemy2.png</key>
-            <key type="filename">../../../../../New Assets/New Assets/blueenemy3.png</key>
-            <key type="filename">../../../../../New Assets/New Assets/smallexplosion1.png</key>
-            <key type="filename">../../../../../New Assets/New Assets/smallexplosion2.png</key>
-            <key type="filename">../../../../../New Assets/New Assets/smallexplosion3.png</key>
-            <key type="filename">../../../../../New Assets/New Assets/smallexplosion4.png</key>
-            <key type="filename">../../../../../New Assets/New Assets/smallexplosion5.png</key>
-            <key type="filename">../../../../../New Assets/New Assets/smallexplosion6.png</key>
+            <key type="filename">../images/smallexplosion1.png</key>
+            <key type="filename">../images/smallexplosion2.png</key>
+            <key type="filename">../images/smallexplosion3.png</key>
+            <key type="filename">../images/smallexplosion4.png</key>
+            <key type="filename">../images/smallexplosion5.png</key>
+            <key type="filename">../images/smallexplosion6.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -347,19 +342,18 @@
             <filename>../images/explosion5.png</filename>
             <filename>../images/explosion6.png</filename>
             <filename>../images/explosion7.png</filename>
-            <filename>../../../../../New Assets/New Assets/blueenemy1.png</filename>
-            <filename>../../../../../New Assets/New Assets/blueenemy2.png</filename>
-            <filename>../../../../../New Assets/New Assets/blueenemy3.png</filename>
-            <filename>../../../../../New Assets/New Assets/smallexplosion6.png</filename>
-            <filename>../../../../../New Assets/New Assets/smallexplosion1.png</filename>
-            <filename>../../../../../New Assets/New Assets/smallexplosion2.png</filename>
-            <filename>../../../../../New Assets/New Assets/smallexplosion3.png</filename>
-            <filename>../../../../../New Assets/New Assets/smallexplosion4.png</filename>
-            <filename>../../../../../New Assets/New Assets/smallexplosion5.png</filename>
-            <filename>../images/smallbullet.png</filename>
+            <filename>../images/planeflash1.png</filename>
+            <filename>../images/planeflash2.png</filename>
+            <filename>../images/bullet.png</filename>
             <filename>../images/enemy1.png</filename>
             <filename>../images/enemy2.png</filename>
             <filename>../images/enemy3.png</filename>
+            <filename>../images/smallexplosion1.png</filename>
+            <filename>../images/smallexplosion2.png</filename>
+            <filename>../images/smallexplosion3.png</filename>
+            <filename>../images/smallexplosion4.png</filename>
+            <filename>../images/smallexplosion5.png</filename>
+            <filename>../images/smallexplosion6.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
