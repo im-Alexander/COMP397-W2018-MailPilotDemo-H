@@ -25,12 +25,15 @@ var objects;
         Bullet.prototype.Start = function () {
             this._dx = 0;
             this._dy = -10;
+            this.Reset();
         };
         Bullet.prototype.Update = function () {
             this.Move();
             this.CheckBounds();
         };
         Bullet.prototype.Reset = function () {
+            this.x = -5000;
+            this.y = -5000;
         };
         Bullet.prototype.CheckBounds = function () {
             if (this.y <= -this.height) {

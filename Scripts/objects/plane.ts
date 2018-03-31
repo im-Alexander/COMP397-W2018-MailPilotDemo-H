@@ -1,7 +1,7 @@
 module objects {
   export class Plane extends objects.GameObject {
     // private instance variables
-
+    private _bulletSpawn:math.Vec2;
 
     // public properties
     public planeFlash: objects.PlaneFlash;
@@ -30,12 +30,14 @@ module objects {
 
       this.x = 320;
       this.y = 430;
+      this._bulletSpawn = new math.Vec2();
     }
 
     // updates the game object every frame
     public Update():void {
       this.Move();
       this.CheckBounds();
+      this.BulletFire();
     }
 
     // reset the objects location to some value
@@ -72,6 +74,24 @@ module objects {
       // left boundary
       if(this.x <= this.halfWidth) {
         this.x = this.halfWidth;
+      }
+    }
+
+    public BulletFire():void {
+      // check if Plane is "alive"
+      if(this.alpha = 1) {
+        let ticker:number = createjs.Ticker.getTicks();
+        if((managers.Game.keyboardManager.fire) && (ticker % 10 == 0)) {
+          this._bulletSpawn = new math.Vec2(this.x, this.y - this. halfHeight);
+          let currentBullet = managers.Game.bulletManger.CurrentBullet;
+          let bullet = managers.Game.bulletManger.Bullets[currentBullet];
+          bullet.x = this._bulletSpawn.x;
+          bullet.y = this._bulletSpawn.y;
+          managers.Game.bulletManger.CurrentBullet++;
+          if(managers.Game.bulletManger.CurrentBullet > 49) {
+            managers.Game.bulletManger.CurrentBullet = 0;
+          }
+        }
       }
     }
   }
