@@ -29,11 +29,13 @@ var scenes;
             // make a reference to the bullet manager in the game manager
             this._bulletManager = new managers.Bullet();
             managers.Game.bulletManger = this._bulletManager;
+            // create an enemy object
+            this._enemy = new objects.Enemy();
             this._coin = new objects.Coin();
             this._island = new objects.Island();
             // instantiate the cloud array
             this._clouds = new Array();
-            this._cloudNum = 0;
+            this._cloudNum = 2;
             // loop and add each cloud to the array
             for (var count = 0; count < this._cloudNum; count++) {
                 this._clouds[count] = new objects.Cloud();
@@ -52,6 +54,7 @@ var scenes;
             var _this = this;
             this._ocean.Update();
             this._plane.Update();
+            this._enemy.Update();
             this._bulletManager.Update();
             this._coin.x = this._island.x;
             this._coin.y = this._island.y;
@@ -63,6 +66,9 @@ var scenes;
                 cloud.Update();
                 // check collision between plane and current cloud
                 managers.Collision.Check(_this._plane, cloud);
+            });
+            this._bulletManager.Bullets.forEach(function (bullet) {
+                managers.Collision.Check(bullet, _this._enemy);
             });
             // if lives fall below zero switch scenes to the game over scene
             if (this._scoreBoard.Lives <= 0) {
@@ -82,6 +88,8 @@ var scenes;
             // add the plane to the scene
             this.addChild(this._plane);
             this.addChild(this._plane.planeFlash); // add the plane flashing effect
+            // add the enemy plane to the scene
+            this.addChild(this._enemy);
             // add the bullets to the scene
             this._bulletManager.Bullets.forEach(function (bullet) {
                 _this.addChild(bullet);

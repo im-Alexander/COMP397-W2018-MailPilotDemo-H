@@ -5,8 +5,8 @@ module objects {
     // public properties
 
     // constructors
-    constructor() {
-      super("explosion");
+    constructor(spriteString:string) {
+      super(spriteString);
       this.Start();
     }
 

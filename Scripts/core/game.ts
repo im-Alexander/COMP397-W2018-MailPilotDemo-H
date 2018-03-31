@@ -99,7 +99,8 @@
     { id: "engine", src: "./Assets/audio/engine.ogg" },
     { id: "coin", src: "./Assets/audio/coin.wav" },
     { id: "life", src: "./Assets/audio/life.wav" },
-    { id: "explosion", src: "./Assets/audio/explosion.mp3" }
+    { id: "explosion", src: "./Assets/audio/explosion.mp3" },
+    { id: "bulletSound", src: "./Assets/audio/bullet.mp3" }
   ];
 
   // preloads assets

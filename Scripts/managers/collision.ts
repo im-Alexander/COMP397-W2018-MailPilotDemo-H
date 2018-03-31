@@ -18,7 +18,7 @@ module managers {
                 object2.alpha = 0;
 
                 // add a life power up
-                if(managers.Game.scoreBoard.Score % 1000 == 0) {
+                if (managers.Game.scoreBoard.Score % 1000 == 0) {
                   managers.Game.scoreBoard.Lives += 1;
                   createjs.Sound.play("life");
                 }
@@ -30,19 +30,29 @@ module managers {
               }
               break;
             case "cloud":
-              if(object1.alpha != 0) {
-              createjs.Sound.play("explosion");
-              managers.Game.scoreBoard.Lives -= 1;
+              if (object1.alpha != 0) {
+                createjs.Sound.play("explosion");
+                managers.Game.scoreBoard.Lives -= 1;
 
-              let explosion = new objects.Explosion();
-              explosion.x = object1.x;
-              explosion.y = object1.y;
-              managers.Game.currentSceneObject.addChild(explosion);
-              object1.alpha = 0; // make the plane object invisible
-              managers.Game.plane.planeFlash.alpha = 1;
-              managers.Game.plane.planeFlash.gotoAndPlay("planeflash");
+                let explosion = new objects.Explosion("explosion");
+                explosion.x = object1.x;
+                explosion.y = object1.y;
+                managers.Game.currentSceneObject.addChild(explosion);
+                object1.alpha = 0; // make the plane object invisible
+                managers.Game.plane.planeFlash.alpha = 1;
+                managers.Game.plane.planeFlash.gotoAndPlay("planeflash");
               }
-
+              break;
+            case "enemy":
+              if (object2.alpha != 0) {
+                createjs.Sound.play("explosion");
+                let explosion = new objects.Explosion("explosion");
+                explosion.x = object2.x;
+                explosion.y = object2.y;
+                managers.Game.currentSceneObject.addChild(explosion);
+                managers.Game.scoreBoard.Score += 200;
+                object2.Reset();
+              }
               break;
           }
         }

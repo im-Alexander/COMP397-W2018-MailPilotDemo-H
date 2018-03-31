@@ -91,6 +91,7 @@ module objects {
           if(managers.Game.bulletManger.CurrentBullet > 49) {
             managers.Game.bulletManger.CurrentBullet = 0;
           }
+          createjs.Sound.play("bulletSound");
         }
       }
     }
