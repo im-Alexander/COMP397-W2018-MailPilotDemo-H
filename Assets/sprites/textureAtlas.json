@@ -1,0 +1,73 @@
+{
+
+"images": [
+    "textureAtlas.png"
+],
+
+"framerate": 20,
+"frames": [
+    [2, 2, 226, 178, 0, 0, 0],
+    [230, 2, 44, 40, 0, 0, 0],
+    [276, 2, 44, 40, 0, 0, 0],
+    [322, 2, 44, 40, 0, 0, 0],
+    [368, 2, 44, 40, 0, 0, 0],
+    [414, 2, 44, 40, 0, 0, 0],
+    [460, 2, 44, 40, 0, 0, 0],
+    [2, 182, 44, 40, 0, 0, 0],
+    [48, 182, 44, 40, 0, 0, 0],
+    [94, 182, 44, 40, 0, 0, 0],
+    [140, 182, 44, 40, 0, 0, 0],
+    [186, 182, 65, 65, 0, 0, 0],
+    [253, 182, 65, 65, 0, 0, 0],
+    [320, 182, 65, 65, 0, 0, 0],
+    [387, 182, 65, 65, 0, 0, 0],
+    [2, 249, 65, 65, 0, 0, 0],
+    [69, 249, 65, 65, 0, 0, 0],
+    [136, 249, 65, 65, 0, 0, 0],
+    [203, 249, 62, 63, 0, 0, 0],
+    [267, 249, 65, 65, 0, 0, 0],
+    [334, 249, 65, 65, 0, 0, 0],
+    [401, 249, 65, 65, 0, 0, 0],
+    [2, 316, 65, 65, 0, 0, 0],
+    [69, 316, 65, 65, 0, 0, 0],
+    [136, 316, 200, 60, 0, 0, 0],
+    [2, 383, 200, 60, 0, 0, 0]
+],
+
+"animations": {
+    "cloud": { "frames": [0] },
+    "coin01": { "frames": [1] },
+    "coin02": { "frames": [2] },
+    "coin03": { "frames": [3] },
+    "coin04": { "frames": [4] },
+    "coin05": { "frames": [5] },
+    "coin06": { "frames": [6] },
+    "coin07": { "frames": [7] },
+    "coin08": { "frames": [8] },
+    "coin09": { "frames": [9] },
+    "coin10": { "frames": [10] },
+    "explosion1": { "frames": [11] },
+    "explosion2": { "frames": [12] },
+    "explosion3": { "frames": [13] },
+    "explosion4": { "frames": [14] },
+    "explosion5": { "frames": [15] },
+    "explosion6": { "frames": [16] },
+    "explosion7": { "frames": [17] },
+    "island": { "frames": [18] },
+    "plane1": { "frames": [19] },
+    "plane2": { "frames": [20] },
+    "plane3": { "frames": [21] },
+    "planeflash": {
+      "frames": [22, 23, 22, 23, 22, 23],
+      "speed": 0.08
+    },
+    "restartButton": { "frames": [24] },
+    "startButton": { "frames": [25] }
+},
+
+"texturepacker": [
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:2828275c1ef8d55670efe96e55184643:a58fa9dc8cb24010af3e757f92d56597:2b5604bc88faefd55ddac16e9bce1532$",
+        "Created with TexturePacker (https://www.codeandweb.com/texturepacker) for EaselJS"
+]
+
+}
