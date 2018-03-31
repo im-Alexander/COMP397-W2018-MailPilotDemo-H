@@ -4,9 +4,9 @@
         <key>fileFormatVersion</key>
         <int>4</int>
         <key>texturePackerVersion</key>
-        <string>4.6.3</string>
+        <string>4.6.2</string>
         <key>fileName</key>
-        <string>/Users/thomas/Desktop/COMP397/COMP397-W2018-MailPilotDemo-F/Assets/sprites/MailPilotDemoProject.tps</string>
+        <string>E:/Zer0_Storage/Alex Homework/_Winter 2018/COMP 397/Classwork/lesson 8/COMP397-W2018-MailPilotDemo-H/Assets/sprites/MailPilotDemoProject.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -129,6 +129,22 @@
                 <uint>1</uint>
             </struct>
         </struct>
+        <key>andEngine</key>
+        <struct type="AndEngine">
+            <key>minFilter</key>
+            <enum type="AndEngine::MinFilter">Linear</enum>
+            <key>packageName</key>
+            <string>Texture</string>
+            <key>wrap</key>
+            <struct type="AndEngineWrap">
+                <key>s</key>
+                <enum type="AndEngineWrap::Wrap">Clamp</enum>
+                <key>t</key>
+                <enum type="AndEngineWrap::Wrap">Clamp</enum>
+            </struct>
+            <key>magFilter</key>
+            <enum type="AndEngine::MagFilter">MagLinear</enum>
+        </struct>
         <key>dataFileNames</key>
         <map type="GFileNameMap">
             <key>json</key>
@@ -218,6 +234,21 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">../images/enemy1.png</key>
+            <key type="filename">../images/enemy2.png</key>
+            <key type="filename">../images/enemy3.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>23,19,47,37</rect>
+                <key>scale9Paddings</key>
+                <rect>23,19,47,37</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">../images/explosion1.png</key>
             <key type="filename">../images/explosion2.png</key>
             <key type="filename">../images/explosion3.png</key>
@@ -267,6 +298,28 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">../images/smallbullet.png</key>
+            <key type="filename">../../../../../New Assets/New Assets/blueenemy1.png</key>
+            <key type="filename">../../../../../New Assets/New Assets/blueenemy2.png</key>
+            <key type="filename">../../../../../New Assets/New Assets/blueenemy3.png</key>
+            <key type="filename">../../../../../New Assets/New Assets/smallexplosion1.png</key>
+            <key type="filename">../../../../../New Assets/New Assets/smallexplosion2.png</key>
+            <key type="filename">../../../../../New Assets/New Assets/smallexplosion3.png</key>
+            <key type="filename">../../../../../New Assets/New Assets/smallexplosion4.png</key>
+            <key type="filename">../../../../../New Assets/New Assets/smallexplosion5.png</key>
+            <key type="filename">../../../../../New Assets/New Assets/smallexplosion6.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>8,8,16,16</rect>
+                <key>scale9Paddings</key>
+                <rect>8,8,16,16</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
         </map>
         <key>fileList</key>
         <array>
@@ -294,6 +347,19 @@
             <filename>../images/explosion5.png</filename>
             <filename>../images/explosion6.png</filename>
             <filename>../images/explosion7.png</filename>
+            <filename>../../../../../New Assets/New Assets/blueenemy1.png</filename>
+            <filename>../../../../../New Assets/New Assets/blueenemy2.png</filename>
+            <filename>../../../../../New Assets/New Assets/blueenemy3.png</filename>
+            <filename>../../../../../New Assets/New Assets/smallexplosion6.png</filename>
+            <filename>../../../../../New Assets/New Assets/smallexplosion1.png</filename>
+            <filename>../../../../../New Assets/New Assets/smallexplosion2.png</filename>
+            <filename>../../../../../New Assets/New Assets/smallexplosion3.png</filename>
+            <filename>../../../../../New Assets/New Assets/smallexplosion4.png</filename>
+            <filename>../../../../../New Assets/New Assets/smallexplosion5.png</filename>
+            <filename>../images/smallbullet.png</filename>
+            <filename>../images/enemy1.png</filename>
+            <filename>../images/enemy2.png</filename>
+            <filename>../images/enemy3.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
